@@ -21,13 +21,13 @@ define( 'WPCACHEHOME', '/home/dh_b7vz6u/microreader.org/wp-content/plugins/wp-su
 define('DB_NAME', 'microreader_org');
 
 /** MySQL database username */
-define('DB_USER', 'microreaderorg1');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'Grandmaster2!');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
-define('DB_HOST', 'mysql.microreader.org');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
