@@ -158,7 +158,11 @@
 					} else {
 						var pagey = $(page[0]).data('index')
 					}
-					if (single_page) {
+
+					if(typeof (single_page) == 'undefined'){
+						var paget = Math.floor(pagey / 2) - 1;
+					}
+					else if (single_page) {
 						var paget = parseInt(pagey) - 1;
 					} else {
 						var paget = Math.floor(pagey / 2) - 1;
@@ -192,7 +196,11 @@
 				} else {
 					var pagey = $(page[0]).data('index')
 				}
-				if (single_page) {
+
+				if(typeof (single_page) == 'undefined'){
+					var paget = Math.floor(pagey / 2) - 1;
+				}
+				else if (single_page) {
 					var paget = parseInt(pagey) - 1;
 				} else {
 					var paget = Math.floor(pagey / 2) - 1;
@@ -655,7 +663,11 @@ if (element.ID){
 				}
 			})
 
-			if (single_page) {
+			if(typeof (single_page) == 'undefined'){
+				var pgWid = 13;
+				var pageLeng = $('div.page').length / 2;
+			}
+			else if (single_page) {
 				var pgWid = 6;
 				var pageLeng = $('div.page').length;
 			} else {
@@ -748,7 +760,11 @@ if (element.ID){
 				var page = page.index()
 				console.log(page);
 				var current_clickcount = $('.clickcount').val();
-				if (single_page) {
+
+				if(typeof (single_page) == 'undefined'){
+					var paget = Math.floor(page / 2) - 1;
+				}
+				else if (single_page) {
 					var paget = parseInt(page) - 1;
 				} else {
 					var paget = Math.floor(page / 2) - 1;
